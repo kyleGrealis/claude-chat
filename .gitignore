@@ -1,3 +1,112 @@
+
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+egg-info/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+test_*.xml
+tox.log
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype
+.pytype/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Rope
+.ropeproject
+
+# Black
+.black/
+
+# isort
+.isort.cfg
+
+# VSCode and Sublime Text
+.sublime-project
+.sublime-workspace
+
+# Environment variables
+.env
+.envrc
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv/
+.env/
+venv.bak/
+venv_old/
+
+# Local IDE/Editor configuration
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
+# misc
 out
 dist
 node_modules
