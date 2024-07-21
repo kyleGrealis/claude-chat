@@ -1,23 +1,40 @@
 {
   "name": "positron-claude-chat",
-  "displayName": "positron-claude-chat",
-  "description": "Positron IDE & AnthropicAI Claude chat",
+  "displayName": "Positron Claude Chat",
+  "description": "Claude AI chat integration for Positron",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.91.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:positron-claude-chat.startChat",
+    "onCommand:positron-claude-chat.setApiKey"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "positron-claude-chat.helloWorld",
-        "title": "Hello World"
+        "command": "positron-claude-chat.startChat",
+        "title": "Start Claude AI Chat"
+      },
+      {
+        "command": "positron-claude-chat.setApiKey",
+        "title": "Set Anthropic API Key"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Positron Claude Chat",
+      "properties": {
+        "positron-claude-chat.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Anthropic API Key for Claude AI"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -25,20 +42,18 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "vscode-test"
+    "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.7",
-    "@types/node": "20.x",
-    "@types/vscode": "^1.91.0",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.11.0",
-    "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5"
+    "@types/node": "14.x",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^7.27.0",
+    "typescript": "^4.3.2"
   },
   "dependencies": {
-    "axios": "^1.7.2"
+    "axios": "^0.21.1"
   }
 }
