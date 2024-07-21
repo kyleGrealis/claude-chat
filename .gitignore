@@ -98,6 +98,7 @@ venv/
 .env/
 venv.bak/
 venv_old/
+.venv/
 
 # Local IDE/Editor configuration
 *.suo
