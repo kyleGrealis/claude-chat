@@ -13,3 +13,6 @@ vsc-extension-quickstart.md
 .git
 *.log
 *.tmp
+images
+images/
+images/*

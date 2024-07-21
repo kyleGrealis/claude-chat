@@ -112,6 +112,3 @@ out
 dist
 node_modules
 .vscode-test/
-images
-images/
-images/*
