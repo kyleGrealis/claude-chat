@@ -69,3 +69,6 @@ You can author your README using Visual Studio Code. Here are some useful editor
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+=======
+# claude-chat
+A VS Code &amp; Positron extension to use Anthropic's Claude 3.5 model
