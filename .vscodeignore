@@ -10,7 +10,6 @@ vsc-extension-quickstart.md
 **/*.ts
 **/.vscode-test.*
 .venv
-node_modules
 .git
 *.log
 *.tmp
