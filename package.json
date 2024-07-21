@@ -2,6 +2,7 @@
   "name": "positron-claude-chat",
   "displayName": "Positron Claude Chat",
   "description": "Claude AI chat integration for Positron",
+  "publisher": "kyleGrealis",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.60.0"
@@ -55,5 +56,9 @@
   },
   "dependencies": {
     "axios": "^0.21.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyleGrealis/claude-chat.git"
   }
 }
